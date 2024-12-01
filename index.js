@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-const dbUrl = process.env.MONGODB_URI || "mongodb://localhost:27017/meals";
+const dbUrl = process.env.MONGODB_URI;
 mongoose
   .connect(dbUrl, {
     useNewUrlParser: true,
